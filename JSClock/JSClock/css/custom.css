@@ -1,0 +1,109 @@
+﻿html {
+    background-image: url('../images/age-barros-qgA-K7Ky2fM-unsplash.jpg');
+    background-size: cover;
+    text-align: center;
+    font-size: 10px;
+}
+
+body {
+    margin: 0;
+    font-size: 2rem;
+    display: flex;
+    flex: 1;
+    min-height: 100vh;
+    align-items: center;
+}
+
+.clock {
+    width: 30rem;
+    height: 30rem;
+    border: 1.5rem solid white;
+    border-radius: 50%;
+    margin: 50px auto;
+    position: relative;
+    padding: 2rem;
+    background-color: rgba(200, 200, 200, .5);
+}
+
+.clock-face {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.dial {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    position: absolute;
+    background: #000;
+    top: 46.5%;
+    left: 45%;
+}
+
+.twelve {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    position: absolute;
+    background: #000;
+    top: 0%;
+    left: 47%;
+}
+
+.three {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    position: absolute;
+    background: #000;
+    top: 48.5%;
+    left: 97%;
+}
+
+.six {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    position: absolute;
+    background: #000;
+    top: 97%;
+    left: 49%;
+}
+
+.nine {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    position: absolute;
+    background: #000;
+    top: 48.5%;
+    left: 0%;
+}
+
+.hand {
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    transform-origin: 100%;
+    /*transform: rotate(90deg);*/
+    transition-timing-function: ease-in;
+}
+
+.hour-hand {
+    height: 8px;
+    background: #000;
+    transition: all 1s;
+}
+
+.min-hand {
+    height: 6px;
+    background: #00F;
+    transition: all 0.1s;
+}
+
+.second-hand {
+    height: 2px;
+    background: #FF0000;
+    transition: all 0.1s;
+}
